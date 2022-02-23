@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto Serif', sans-serif;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 0}
+}
+
+body {
+    background-color: grey;
+    color: white;
+}
+
+.koostisosad {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    animation: textLeft;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0}
+}
+
+.koostisosad-tabel {
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.valmistamine {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+    animation: textRight;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes textRight {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0}
+}
+
+.valmistamine ol {
+    border: 1px solid white;
+    margin: 10px auto;
+    width: 75%;
+}
+
+img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.allikas {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: yellow;
+    animation: anibtn;
+    animation-duration: 5s;
+    position: relative;
+}
+@keyframes anibtn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+    padding-top: 20px;
+}
